@@ -19,7 +19,8 @@ const HomePage = () => {
 
   const handleSelect = (item) => {
     if (!user) {
-      setStatus({ type: 'error', message: 'Please login to book.' });
+      // setStatus({ type: 'error', message: 'Please login to book.' });
+      alert("Please Login/Sign Up to continue booking.");
       return;
     }
     navigate(`/book/${item._id}`);
@@ -29,7 +30,7 @@ const HomePage = () => {
     <section className="page">
       <div className="page-heading">
         <div>
-          <p className="muted">Handpicked cars</p>
+          <p className="muted">Best rides for you</p>
           <h1>Reserve a ride</h1>
           <p>Browse ready-to-drive cars and lock your pickup date.</p>
         </div>

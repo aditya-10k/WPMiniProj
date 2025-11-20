@@ -8,12 +8,13 @@ const BookingCard = ({ item, onSelect }) => (
     </div>
     <div className="card-footer">
       <div>
-        <strong>₹{item.price}/day</strong>
+        <strong>₹{item.price}/day </strong>
+        <br />
         <small>{item.slotsAvailable} available</small>
       </div>
       <button onClick={() => onSelect(item)}>Select</button>
     </div>
-  </div>
+  </div >
 );
 
 export default BookingCard;
